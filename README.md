@@ -3,10 +3,10 @@
 We have created [Fiji](https://fiji.sc) scripts and plugins for automated (batch) processing of Single-Molecule Localization Microscopy (SMLM) datasets, using [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
 
 ## Here you can download the complete package:
-### 1. [SMLM_process_folder.ijm](https://raw.githubusercontent.com/Jalink-lab/SMLM-macro/master/SMLM_process_folder.ijm)
-### 2. [ImageJSON Fiji plugin](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
-### 3. [Temporal Median Background subtraction Fiji plugin](https://github.com/Jalink-lab/SMLM-macro/blob/master/SMLM_process_folder.ijm)
-### 4. [Chromatic Aberration Correction Fiji plugin](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/releases/download/v1.12/Chromatic-Aberration-Correction-1.12.jar)
+### 1. ImageJ1 macro [SMLM_process_folder.ijm](https://raw.githubusercontent.com/Jalink-lab/SMLM-macro/master/SMLM_process_folder.ijm)
+### 2. Plugin [Temporal Median Background subtraction Fiji](https://github.com/Jalink-lab/SMLM-macro/blob/master/SMLM_process_folder.ijm)
+### 3. Plugin [Chromatic Aberration Correction Fiji](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/releases/download/v1.12/Chromatic-Aberration-Correction-1.12.jar)
+### 4. Plugin [ImageJSON Fiji](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
 
 ### Installation instuctions
 Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro, drag into the Fiji window and click Run. Dependencies: [ThunderSTORM](https://zitmen.github.io/thunderstorm/)
