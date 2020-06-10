@@ -13,7 +13,7 @@ Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins fo
 
 ## Detailed descriptions (links to the repositories)
 
-### [SMLM_process_folder.ijm](https://github.com/Jalink-lab/SMLM-macro/)
+### [SMLM_process_folder](https://github.com/Jalink-lab/SMLM-macro/)
 This macro is basically a wrapper around the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/), still a very useful tool for SMLM analysis. However, ThunderSTORM doesn't have much functionality for batch processing.
 This macro processes all blinking time-lapse images in a folder. If the file format is Leica's .lif, multiple series in one file are processed.
 In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are set to default, and/or can be changed in the macro code before running. _(@rharkes nog even checken of dit waar is?)_
@@ -31,5 +31,5 @@ Because of the high localization precision in SMLM, chromatic aberrations are in
 We provide tools to transform the x,y localizations from different wavelengths using affine transformations. The required transformation matrices to map one color onto another can be generated with localization data from multicolor beads.
 N.B. We designed this plugin for the Leica GSD. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. (If you have another system you can still trick the system, so you don't actually have to use these wavelength.)
 
-All settings (both from this macro and ThunderSTORM-specific settings) are saved in JSON files, generated with the
-# [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON).
+### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
+This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every prcessed file in JSON format for easy indexing by other software.
