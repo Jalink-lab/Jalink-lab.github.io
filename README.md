@@ -4,7 +4,7 @@ We have created some [Fiji](https://fiji.sc) scripts and plugins for automated (
 
 ## Here you can download the complete package:
 ### 1. [SMLM_process_folder.ijm](https://raw.githubusercontent.com/Jalink-lab/SMLM-macro/master/SMLM_process_folder.ijm)
-### 2. [ImageJSON Fiji plugin](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar) (place in Fiji plugins folder)
+### 2. [ImageJSON Fiji plugin](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
 ### 3. [Temporal Median Background subtraction Fiji plugin](https://github.com/Jalink-lab/SMLM-macro/blob/master/SMLM_process_folder.ijm)
 ### 4. [Chromatic Aberration Correction Fiji plugin](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/releases/download/v1.12/Chromatic-Aberration-Correction-1.12.jar)
 
