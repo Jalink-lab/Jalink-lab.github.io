@@ -9,4 +9,8 @@ It allows processing multiple blinking movies in a folder. In the dialog the mos
 We have included a few convenient extras, such as [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases) and Chromatic Aberration Correction sing affine transformations. (paper: https://www.nature.com/articles/srep03854)
 
 All settings (both from this macro and ThunderSTORM-specific settings) are saved in JSON files.
-![Macro dialog](images/SR_postprocess_dialog_screenshot.png)Format: ![Alt Text](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases)
+![Macro dialog](images/SR_postprocess_dialog_screenshot.png){
+  width: 70%;
+  border: none;
+  background: none;
+}
