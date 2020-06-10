@@ -1,4 +1,4 @@
-## Welcome to Jalink Lab.
+## Single-Molecule Localization Microscopy Tools
 
 Here you can find several [Fiji](https://fiji.sc) scripts for automated reconstruction of Single-Molecule Localization Microscopy (SMLM) images.
 
