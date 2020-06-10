@@ -1,6 +1,6 @@
 ## Single-Molecule Localization Microscopy Tools
 
-We have created some [Fiji](https://fiji.sc) scripts and plugins for automated (batch) reconstruction of Single-Molecule Localization Microscopy (SMLM) images, using [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
+We have created [Fiji](https://fiji.sc) scripts and plugins for automated (batch) processing of Single-Molecule Localization Microscopy (SMLM) images, using [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
 
 ## Here you can download the complete package:
 ### 1. [SMLM_process_folder.ijm](https://raw.githubusercontent.com/Jalink-lab/SMLM-macro/master/SMLM_process_folder.ijm)
