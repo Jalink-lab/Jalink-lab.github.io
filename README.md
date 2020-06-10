@@ -2,7 +2,7 @@
 
 Here you can find several [Fiji](https://fiji.sc) scripts for automated reconstruction of Single-Molecule Localization Microscopy (SMLM) images.
 
-# SR_postProcess.ijm
+### SR_postProcess.ijm
 This macro is basically a wrapper around the ImageJ plugin [ThunderSTRORM](https://zitmen.github.io/thunderstorm/).
 It allows processing multiple blinking movies in a folder. In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are set to default, and/or can be changed in the macro code before running. _(@rharkes nog even checken of dit waar is?)_
 
