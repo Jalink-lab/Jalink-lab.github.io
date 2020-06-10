@@ -1,6 +1,14 @@
-## Welcome to Jalink Lab
+## Welcome to Jalink Lab.
 
-Here we publish SMLM scripts.
+Here you can find several [Fiji](https://fiji.sc) scripts for automated reconstruction of Single-Molecule Localization Microscopy (SMLM) images.
+
+#SR_postProcess.ijm
+This macro is basically a wrapper around the ImageJ plugin [ThunderSTRORM](https://zitmen.github.io/thunderstorm/).
+It allows processing multiple blinking movies in a folder. In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are set to default, and/or can be changed in the macro code before running. (@rharkes nog even checken of dit waar is?)
+
+
+
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
