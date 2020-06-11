@@ -34,6 +34,5 @@ N.B. We designed this plugin for the Leica SR-GSD microscope. Currently chromati
 ### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
 This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every prcessed file in JSON format for easy indexing by other software.
 
-(c) All code was developed by Rolf Harkes and Bram van den Broek,
-[Kees Jalink lab](https://jalinklab.nl), [The Netherlands Cancer Institute](https://nki.nl)
+(c) All code was developed by Rolf Harkes and Bram van den Broek, in the [Kees Jalink lab](https://jalinklab.nl), at the [The Netherlands Cancer Institute](https://nki.nl)
 
