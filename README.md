@@ -20,7 +20,7 @@ In the dialog the most important settings of ThunderSTORM can be set. (Other par
 
 We have included a few convenient extras, such as:
 
-### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases)
+### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/download/v2.2/TemporalMedian-2.2.jar)
 In SMLM, the localization precision critically depends on the (typically) Gaussian fit. However, super-resolution datasets sometimes contain significant non-sparse, structured background components. Such background usually originates from out-of-focus, continuously emitting fluorescent molecules attached to cellular structures or cellular auto-fluorescence, and is often present with dSTORM imaging of dyes with non-perfect blinking properties, and PALM.
 Due to bleaching and other effects the structured background changes slowly over time, much slower than the blinking fluorophores. It can be estimated with a temporal median filter (see [Hoogendoorn et al.]https://www.nature.com/articles/srep03854). We have written a fast implementation that calculates a sliding median for every pixel over time with a large time window, and subtracts it from the original. Performing Temporal Median Background Subtraction can yield a dramaticcally better superresolved image.
 
