@@ -29,10 +29,11 @@ There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Backg
 ### [Chromatic Aberration Correction](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/)
 Because of the high localization precision in SMLM, chromatic aberrations are inevitable when imaging multiple colors.
 We provide tools to transform the x,y localizations from different wavelengths using affine transformations. The required transformation matrices to map one color onto another can be generated with localization data from multicolor beads.
+
 N.B. We designed this plugin for the Leica SR-GSD microscope. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. (If you have another system you can still trick the system, so you don't actually have to use these wavelength.)
 
 ### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
 This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every prcessed file in JSON format for easy indexing by other software.
 
-(c) 2020. All code was developed by Rolf Harkes and Bram van den Broek, in the [Kees Jalink lab](https://jalinklab.nl), at the [The Netherlands Cancer Institute](https://nki.nl)
+Copyright (c) 2017-2020. All code was developed by Rolf Harkes and Bram van den Broek, in the [Kees Jalink lab](https://jalinklab.nl), at the [The Netherlands Cancer Institute](https://nki.nl)
 
