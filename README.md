@@ -24,7 +24,7 @@ The most important settings of ThunderSTORM can be set using script parameters. 
 
 We have added a few useful features, described below.
 
-Disclaimer: The macro was initially designed for analyzing data from a Leica SR-GSD microscope. It certainly works for separate `.tif` files, and most probably other Bio-Formats compatible file formats as well. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. (A (rather ugly) workaround is to trick the macro into _thinking_ that you are using those wavelengths.) We are working on a more general solution.
+Disclaimer: The macro was initially designed for analyzing data from a Leica SR-GSD microscope. It certainly works for separate `.tif` files, and most probably other Bio-Formats compatible file formats as well. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. A (rather ugly) workaround is to trick the macro into _thinking_ that you are using those wavelengths. We are working on a more general solution.
 
 
 ### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction)
