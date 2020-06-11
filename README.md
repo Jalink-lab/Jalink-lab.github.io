@@ -1,7 +1,7 @@
 ## Single-Molecule Localization Microscopy Tools
 
 Here you find several [Fiji](https://fiji.sc) scripts and plugins to perform automated (batch) processing of Single-Molecule Localization Microscopy (SMLM) datasets, using the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
-ThunderSTORM is a very useful tool for analysis and visualization of localization microscopy data. However, it doesn't have much functionality for batch processing, and it misses other necessary processing steps, like temporal background subtraction and chromatic aberration correction.
+ThunderSTORM is a very useful tool for analysis and visualization of localization microscopy data. However, it doesn't have much functionality for batch processing, and it misses other necessary processing steps, like multi-color support, temporal background subtraction and chromatic aberration correction.
 We have developed some tools to automate these processes.
 
 ## Download the complete package:
