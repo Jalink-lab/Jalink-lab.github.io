@@ -11,7 +11,7 @@ We have developed tools to automate these processes.
 ### 4. Plugin [ImageJSON](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
 
 ### Installation instructions
-Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro, drag into the Fiji window and click Run. [ThunderSTORM](https://zitmen.github.io/thunderstorm/) is a prerequisite.
+Download the plugin .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro (nr. 1), drag into the Fiji window and click Run. Dependencies: [ThunderSTORM](https://zitmen.github.io/thunderstorm/) and [Bio-Formats](https://imagej.net/Bio-Formats).
 
 ## Detailed descriptions (links to the repositories)
 
@@ -25,8 +25,10 @@ The most important settings of ThunderSTORM can be set using script parameters. 
 We have added a few useful features:
 
 ### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction)
-In SMLM, the localization precision critically depends on the (typically) Gaussian fit. However, super-resolution datasets sometimes contain significant non-sparse, structured background components. Such background usually originates from out-of-focus, continuously emitting fluorescent molecules attached to cellular structures or cellular auto-fluorescence, and is often present with dSTORM imaging of dyes with non-perfect blinking properties, and PALM.
-Due to bleaching and other effects the structured background changes slowly over time, much slower than the blinking fluorophores. It can be estimated with a temporal median filter (see [Hoogendoorn et al.]https://www.nature.com/articles/srep03854). We have written a fast implementation that calculates a sliding median for every pixel over time with a large time window, and subtracts it from the original. Performing Temporal Median Background Subtraction can yield a dramatically improved superresolved image.
+In SMLM, the localization precision critically depends on the (Gaussian) fit of the underlying pixel data of single emitting fluorohore. SMLM datasets sometimes contain a significant structured background, usually originating from out-of-focus, continuously emitting fluorophores attached to cellular structures or cellular auto-fluorescence. Such background is often present in PALM, and in dSTORM imaging with non-perfect blinking dyes (too short dark state).
+Due to bleaching and other effects the background changes over time. Since this happens on a much slower time scale then the blinking of fluorophores, and fluorophores are only 'on' for a relatively short time, the background can be estimated with a temporal median filter (see [Hoogendoorn et al.](https://www.nature.com/articles/srep03854).
+
+We have written a fast implementation that calculates for every pixel a sliding median over time, and subtracts the result from the original. Performing Temporal Median Background Subtraction can yield a dramatically improved superresolved image.
 
 There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v3.2) as well, but it is slower than the [ImageJ1 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v2.2). We recommend to use the latter.
 
