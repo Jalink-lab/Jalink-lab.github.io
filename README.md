@@ -9,7 +9,7 @@ We have created [Fiji](https://fiji.sc) scripts and plugins for automated (batch
 ### 4. Plugin [ImageJSON Fiji](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
 
 ### Installation instructions
-Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro, drag into the Fiji window and click Run. Having [ThunderSTORM](https://zitmen.github.io/thunderstorm/) installed is a prerequisite.
+Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro, drag into the Fiji window and click Run. [ThunderSTORM](https://zitmen.github.io/thunderstorm/) is a prerequisite.
 
 ## Detailed descriptions (links to the repositories)
 
