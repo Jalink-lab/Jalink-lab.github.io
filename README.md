@@ -22,7 +22,10 @@ The most important settings of ThunderSTORM can be set using script parameters. 
 
 ![Parameters dialog](/images/SR_postprocess_dialog_screenshot_small.png)
 
-We have added a few useful features:
+We have added a few useful features, described below.
+
+Disclaimer: The macro was initially designed for analyzing data from a Leica SR-GSD microscope. It certainly works for separate `.tif` files, and most probably other Bio-Formats compatible file formats as well. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. (A (rather ugly) workaround is to trick the macro into _thinking_ that you are using those wavelengths.) We are working on a more general solution.
+
 
 ### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction)
 In SMLM, the localization precision critically depends on the (Gaussian) fit of the underlying pixel data of single emitting fluorohore. SMLM datasets sometimes contain a significant structured background, usually originating from out-of-focus, continuously emitting fluorophores attached to cellular structures or cellular auto-fluorescence. Such background is often present in PALM, and in dSTORM imaging with non-perfect blinking dyes (too short dark state).
@@ -30,13 +33,12 @@ Due to bleaching and other effects the background changes over time. Since this 
 
 We have written a fast implementation that calculates for every pixel a sliding median over time, and subtracts the result from the original. Performing Temporal Median Background Subtraction can yield a dramatically improved superresolved image.
 
-There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v3.2) as well, but it is slower than the [ImageJ1 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v2.2). We recommend to use the latter.
+There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v3.2) as well that uses less memory, but it is ~2.5 times slower than the [ImageJ1 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v2.2).
 
 ### [Chromatic Aberration Correction](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/)
 Because of the high localization precision in SMLM, chromatic aberrations are inevitable when imaging multiple colors.
 We provide tools to transform the x,y localizations from different wavelengths using affine transformations. The required transformation matrices to map one color onto another can be generated with localization data from multicolor beads.
 
-N.B. We designed this plugin for the Leica SR-GSD microscope. Currently chromatic aberration can only be applied if the (excitation) wavelengths are set to 488 nm, 532 nm, or 642 nm, where the first two are mapped to the latter. (If you have another system you can still trick the system, so you don't actually have to use these wavelength.)
 
 ### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
 This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every prcessed file in JSON format for easy indexing by other software.
