@@ -16,7 +16,7 @@ Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins fo
 ### [SMLM_process_folder](https://github.com/Jalink-lab/SMLM-macro/)
 This macro is basically a wrapper around the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/), still a very useful tool for SMLM analysis. However, ThunderSTORM doesn't have much functionality for batch processing.
 This macro processes all blinking time-lapse images in a folder. If the file format is Leica's .lif, multiple series in one file are processed.
-In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are set to default, and/or can be changed in the macro code before running. _(@rharkes nog even checken of dit waar is?)_
+In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are taken from ThunderSTORM, and/or can be changed in the macro code before running.
 
 We have included a few convenient extras, such as:
 
