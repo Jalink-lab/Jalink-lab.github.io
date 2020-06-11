@@ -1,6 +1,8 @@
 ## Single-Molecule Localization Microscopy Tools
 
-We have created [Fiji](https://fiji.sc) scripts and plugins for automated (batch) processing of Single-Molecule Localization Microscopy (SMLM) datasets, using [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
+Here you find several [Fiji](https://fiji.sc) scripts and plugins to perform automated (batch) processing of Single-Molecule Localization Microscopy (SMLM) datasets, using the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
+[ThunderSTORM](https://zitmen.github.io/thunderstorm/) is a very useful tool for analysis and visualization of localization microscopy data. However, ThunderSTORM doesn't have much functionality for batch processing, and it misses other necessary processing steps, like temporal background subtraction and chromatic aberration correction.
+We have developed tools to automate these processes.
 
 ## Download the complete package:
 ### 1. ImageJ1 macro [SMLM_process_folder.ijm](https://raw.githubusercontent.com/Jalink-lab/SMLM-macro/master/SMLM_process_folder.ijm)
@@ -14,15 +16,17 @@ Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins fo
 ## Detailed descriptions (links to the repositories)
 
 ### [SMLM_process_folder](https://github.com/Jalink-lab/SMLM-macro/)
-This macro is basically a wrapper around the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/), still a very useful tool for SMLM analysis. However, ThunderSTORM doesn't have much functionality for batch processing.
-This macro processes all blinking time-lapse images in a folder. If the file format is Leica's .lif, multiple series in one file are processed.
-In the dialog the most important settings of ThunderSTORM can be set. (Other parameters are taken from ThunderSTORM, and/or can be changed in the macro code before running.
+This macro is essentially a wrapper around the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/).
+It processes all time-lapse images in a folder. Images are opened using Bio-Formats. In case the chosen file format is `.lif` (Leica Image Format) multiple series within a file are processed.
+The most important settings of ThunderSTORM can be set using script parameters. For clarity we have chosen to not include all parameters. Other parameters are either set to reasonable default values, and/or are taken over from the current ThunderSTORM settings. Some can be changed in the top of the macro code.
 
-We have included a few convenient extras, such as:
+![Parameters dialog](/images/SR_postprocess_dialog_screenshot_small.png)
+
+We have added a few useful features:
 
 ### [Temporal Median Background subtraction](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction)
 In SMLM, the localization precision critically depends on the (typically) Gaussian fit. However, super-resolution datasets sometimes contain significant non-sparse, structured background components. Such background usually originates from out-of-focus, continuously emitting fluorescent molecules attached to cellular structures or cellular auto-fluorescence, and is often present with dSTORM imaging of dyes with non-perfect blinking properties, and PALM.
-Due to bleaching and other effects the structured background changes slowly over time, much slower than the blinking fluorophores. It can be estimated with a temporal median filter (see [Hoogendoorn et al.]https://www.nature.com/articles/srep03854). We have written a fast implementation that calculates a sliding median for every pixel over time with a large time window, and subtracts it from the original. Performing Temporal Median Background Subtraction can yield a dramaticcally better superresolved image.
+Due to bleaching and other effects the structured background changes slowly over time, much slower than the blinking fluorophores. It can be estimated with a temporal median filter (see [Hoogendoorn et al.]https://www.nature.com/articles/srep03854). We have written a fast implementation that calculates a sliding median for every pixel over time with a large time window, and subtracts it from the original. Performing Temporal Median Background Subtraction can yield a dramatically improved superresolved image.
 
 There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v3.2) as well, but it is slower than the [ImageJ1 version](https://github.com/Jalink-lab/Temporal-Median-Background-Subtraction/releases/tag/v2.2). We recommend to use the latter.
 
