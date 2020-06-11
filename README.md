@@ -41,7 +41,7 @@ We provide tools to transform the x,y localizations from different wavelengths u
 
 
 ### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
-This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every prcessed file in JSON format for easy indexing by other software.
+This plugin is used to save all the settings (both SMLM_process_folder-specific and ThunderSTORM-specific) for every processed file in JSON format for easy indexing by other software.
 
-Copyright (c) 2017-2020. All code was developed by Rolf Harkes and Bram van den Broek, in the [Kees Jalink lab](https://jalinklab.nl), at the [The Netherlands Cancer Institute](https://nki.nl)
+Copyright (c) 2017-2020. All code was developed by Rolf Harkes and Bram van den Broek, with testing by Leila Nahidiazar, in the [Kees Jalink lab](https://jalinklab.nl), at the [The Netherlands Cancer Institute](https://nki.nl)
 
