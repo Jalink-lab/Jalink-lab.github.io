@@ -11,8 +11,7 @@ We have created [Fiji](https://fiji.sc) scripts and plugins for automated (batch
 ### Installation instructions
 Download the plugins .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro, drag into the Fiji window and click Run. [ThunderSTORM](https://zitmen.github.io/thunderstorm/) is a prerequisite.
 
-## Detailed descriptions
-(links to the repositories)
+## Detailed descriptions (links to the repositories)
 
 ### [SMLM_process_folder](https://github.com/Jalink-lab/SMLM-macro/)
 This macro is basically a wrapper around the ImageJ plugin [ThunderSTORM](https://zitmen.github.io/thunderstorm/), still a very useful tool for SMLM analysis. However, ThunderSTORM doesn't have much functionality for batch processing.
