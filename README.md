@@ -37,7 +37,7 @@ There is a [Imglib2 version](https://github.com/Jalink-lab/Temporal-Median-Backg
 
 ### [Chromatic Aberration Correction](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/)
 Because of the high localization precision in SMLM, chromatic aberrations are inevitable when imaging multiple colors.
-We provide tools to transform the `x` and `y` localizations from different wavelengths using affine transformations. The required transformation matrices to map one color onto another can be generated with localization data from multicolor beads. See the [repository](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/) for more information.
+We provide tools to transform the `x` and `y` localization coordinates from different wavelengths using affine transformations. The required transformation matrices to map one color onto another can be generated with localization data from multicolor beads. See the [repository](https://github.com/Jalink-lab/Chromatic-Aberration-Correction/) for more information.
 
 
 ### [ImageJSON plugin](https://github.com/Jalink-lab/ImageJSON)
