@@ -11,7 +11,7 @@ We have developed some tools to automate these processes.
 ### 4. Plugin [ImageJSON](https://github.com/Jalink-lab/ImageJSON/releases/download/v1.0/ImageJSON-1.0.0.jar)
 
 ### Installation instructions
-Download the plugin .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro (nr. 1), drag into the Fiji window and click Run. Dependencies: [ThunderSTORM](https://zitmen.github.io/thunderstorm/) and [Bio-Formats](https://imagej.net/Bio-Formats).
+Download the plugin .jar files (nr. 2,3 and 4) and place in the Fiji plugins folder. Download the macro (nr. 1), drag into the Fiji window and click Run. Dependencies: [ThunderSTORM](https://github.com/zitmen/thunderstorm/releases/latest) and [Bio-Formats](https://imagej.net/Bio-Formats).
 
 ## Detailed descriptions (links to the repositories)
 
